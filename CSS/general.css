@@ -270,6 +270,7 @@ ul.check_bullet li::before {
   margin-bottom: 50px;
   color: white;
   font-size: 18px;
+  text-align: justify;
 }
 
 .bio-section-info a {
