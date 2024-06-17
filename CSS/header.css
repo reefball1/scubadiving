@@ -151,6 +151,10 @@ a:active {
   max-height: 400px;
 }
 
+.menu-links.open ul {
+  padding-left: 0;
+}
+
 #header.open {
   background-color: white;
 }
