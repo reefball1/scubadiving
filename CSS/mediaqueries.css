@@ -82,7 +82,8 @@
     padding-bottom: 20px;
   }
 
-  .why-page-first-section {
+  .why-page-first-section,
+  .why-page-second-section {
     grid-template-columns: 1fr;
   }
 

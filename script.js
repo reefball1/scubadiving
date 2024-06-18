@@ -28,17 +28,17 @@ function updateHeaderStyles() {
     headerText.forEach(function(text) {
         text.style.color = textColor;
     });
+
+    const header = document.querySelector("#header");
+    if (isHeaderScrolled || isMenuOpen) {
+        header.style.backgroundColor = "white";
+    } else {
+        header.style.backgroundColor = "transparent";
+    }
 }
 
 document.getElementById('hamburger-icon').onclick = function() {
     toggleMenu();
-}
-
-document.getElementById('explore-button').onclick = function() {
-    const tilesPage = document.getElementById('tiles');
-    const yOffset = -75; 
-    const y = tilesPage.getBoundingClientRect().top + window.scrollY + yOffset;
-    window.scrollTo({top: y, behavior: 'smooth'});
 }
 
 window.onscroll = function() {
@@ -47,7 +47,6 @@ window.onscroll = function() {
 
 function scrollFunction() {
     const header = document.getElementById("header");
-    const isTransparentHeader = document.querySelectorAll("#transparent-header").length > 0;
     const hasScrolled = document.body.scrollTop > 75 || document.documentElement.scrollTop > 75;
 
     if (hasScrolled) {
@@ -63,4 +62,3 @@ window.onload = function() {
     document.body.className += " loaded";
     updateHeaderStyles();
 }
-
