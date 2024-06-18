@@ -27,6 +27,9 @@
 }
 .why-page-img-side {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .why-page-img-side img {
