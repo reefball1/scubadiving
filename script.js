@@ -58,7 +58,15 @@ function scrollFunction() {
     updateHeaderStyles();
 }
 
+document.getElementById('explore-button').onclick = function() {
+    const tilesPage = document.getElementById('tiles');
+    const yOffset = -75; 
+    const y = tilesPage.getBoundingClientRect().top + window.scrollY + yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
+}
+
 window.onload = function() {
     document.body.className += " loaded";
     updateHeaderStyles();
 }
+
