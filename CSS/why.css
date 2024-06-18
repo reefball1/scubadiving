@@ -25,6 +25,12 @@
 .why-page-text-side ol {
     max-width: 75%;
 }
+
+
+.why-page-text-side ul {
+    margin-right: 4rem;
+}
+
 .why-page-img-side {
     text-align: center;
     display: flex;
@@ -62,4 +68,14 @@
 .call-to-action {
     text-align: center;
     margin: 0 5rem 3rem 5rem;
+}
+
+.why-page-text-side.title-version {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-page-text-side.title-version h1 {
+    margin-bottom: 0;
 }
