@@ -26,14 +26,14 @@ body {
 .top-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)),
-    url('../images/main-photo.avif') black;
+    url('../images/main-photo.jpg') black;
   background-size: cover;
   padding-top: 250px;
   display: grid;
   justify-content: column;
   width: 100%;
   justify-items: center;
-  background-position: 50.00% 50.00%;
+  background-position: 50.00% 60.00%;
 }
 
 .work-section {
