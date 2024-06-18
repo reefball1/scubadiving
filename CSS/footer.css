@@ -21,7 +21,9 @@ footer a {
   margin-bottom: 0.75rem;
 }
 
-footer a:active {
+footer a:active,
+.tiles a:active,
+.menu-links a:active {
   border: none;
 }
 
