@@ -1,0 +1,35 @@
+.why-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)),
+      url('../images/photo-1.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+.why-page-first-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 3rem;
+}
+
+.why-page-text-side li{
+    line-height: 2rem;
+}
+
+.why-page-img-side {
+    text-align: center;
+}
+
+.why-page-img-side img {
+    border-radius: 12px;
+    max-width: 75%;
+}
+
+.why-page-second-section {
+    margin: 3rem;
+}
+.why-page-title {
+    text-align: center;
+}
+
+

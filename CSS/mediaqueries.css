@@ -82,6 +82,10 @@
     padding-bottom: 20px;
   }
 
+  .why-page-first-section {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -132,5 +136,4 @@
     padding-left: 0;
     /* text-align: justify; */
   }
-  
 }

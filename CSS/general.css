@@ -342,3 +342,11 @@ a:hover {
   margin-right: 0.5em;
   vertical-align: middle;
 }
+
+
+.new-page-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 20vh;
+}
