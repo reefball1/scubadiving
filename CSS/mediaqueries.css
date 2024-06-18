@@ -93,6 +93,10 @@
     flex-direction: column;
 }
 
+  .why-page-img-side.first-image{
+    margin-top: 2rem;
+  }
+
   .why-page-img-side:nth-child(1),
   .why-page-text-side:nth-child(3) {
       order: 1;
