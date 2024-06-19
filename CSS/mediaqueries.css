@@ -174,5 +174,21 @@
     max-width: 85%;
   }
 
+  .steps-container {
+    flex-direction: column;
+}
+.step {
+    flex-direction: column;
+}
+.step img {
+    width: 100%;
+}
+.step-content {
+    width: 80%;
+    padding: 30px;
+}
+
+
 
 }
+

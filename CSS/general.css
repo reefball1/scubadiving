@@ -350,3 +350,7 @@ a:hover {
   flex-direction: column;
   height: 20vh;
 }
+
+.new-page-header .headline {
+  margin-bottom: 0;
+}
