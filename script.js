@@ -15,7 +15,7 @@ function updateHeaderStyles() {
     const hamburgerSpans = document.querySelectorAll("#hamburger-icon span");
     const headerText = document.querySelectorAll(".website-title, .menu-links a");
     const isMenuOpen = icon.classList.contains('open');
-    const isHeaderScrolled = document.body.scrollTop > 75 || document.documentElement.scrollTop > 75;
+    const isHeaderScrolled = document.body.scrollTop > 25 || document.documentElement.scrollTop > 25;
     const isTransparentHeader = document.querySelectorAll("#transparent-header").length > 0;
 
     const spanColor = (isMenuOpen || isHeaderScrolled || !isTransparentHeader) ? "black" : "white";
@@ -47,7 +47,7 @@ window.onscroll = function() {
 
 function scrollFunction() {
     const header = document.getElementById("header");
-    const hasScrolled = document.body.scrollTop > 75 || document.documentElement.scrollTop > 75;
+    const hasScrolled = document.body.scrollTop > 25 || document.documentElement.scrollTop > 25;
 
     if (hasScrolled) {
         header.classList.add("header-scrolled");
@@ -68,9 +68,6 @@ function linkToTiles(section) {
 function open(section) {
     let url = '';
     switch (section) {
-        case 'about':
-            url = './about';
-            break;
         case 'why':
             url = './why';
             break;
@@ -92,7 +89,6 @@ function open(section) {
     window.location.href = url;
 }
 
-linkToTiles('about');
 linkToTiles('why');
 linkToTiles('steps');
 linkToTiles('advanced');

@@ -1,5 +1,23 @@
 @media screen and (max-width: 1200px) {
 
+  .form-side {
+    flex: 1.5;
+  }
+  .form-container {
+    margin-top: 0;
+    padding-top: 0;
+    max-width: 100%;
+  }
+
+  .contact-us,
+  .form-group {
+    flex-direction: column;
+  }
+
+  .form-group {
+    gap: 1rem;
+  }
+
   .pricing-detail {
     flex-direction: column;
   }
@@ -23,7 +41,7 @@
     margin-right: 0;
     padding-left: 0;
   }
-  
+
 
   .right-section {
     display: none;
@@ -196,20 +214,22 @@
 
   .steps-container {
     flex-direction: column;
-}
-.step {
+  }
+
+  .step {
     flex-direction: column;
     max-height: 100%;
-}
-.step img {
+  }
+
+  .step img {
     width: 100%;
-}
-.step-content {
+  }
+
+  .step-content {
     width: 80%;
     padding: 30px;
-}
+  }
 
 
 
 }
-
