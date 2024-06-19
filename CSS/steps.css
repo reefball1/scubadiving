@@ -1,21 +1,23 @@
 .steps-header {
     background: linear-gradient(rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)),
-      url('../images/learning-steps.avif');
+            rgba(0, 0, 0, 0.5)),
+        url('../images/learning-steps.avif');
     background-position: 50% 65%;
     background-size: cover;
-  }
+}
 
-  .content {
+.content {
     max-width: 1200px;
     margin: 0 auto 20px auto;
     padding: 0px 20px 20px 20px;
 }
+
 .steps-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .step {
     display: flex;
     align-items: center;
@@ -25,23 +27,28 @@
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .step:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .step img {
     width: 40%;
     height: auto;
     object-fit: cover;
 }
+
 .step-content {
     padding: 20px;
     width: 60%;
 }
+
 .step h2 {
     margin-top: 0;
     color: #22537a;
 }
+
 .step p {
     margin: 10px 0;
     line-height: 1.6;
