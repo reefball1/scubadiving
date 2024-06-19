@@ -199,6 +199,7 @@
 }
 .step {
     flex-direction: column;
+    max-height: 100%;
 }
 .step img {
     width: 100%;
