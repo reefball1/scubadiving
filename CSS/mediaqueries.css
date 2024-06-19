@@ -1,9 +1,29 @@
 @media screen and (max-width: 1200px) {
 
-  .why-page-text-side ul {
+  .pricing-detail {
+    flex-direction: column;
+  }
+
+  .pricing-text {
+    margin-left: 0;
+  }
+
+  .equipment,
+  .pricing-section {
+    margin-bottom: 0;
+  }
+
+  .pricing-section {
+    box-shadow: none;
+  }
+
+  .why-page-text-side ul,
+  .why-page-text-side ol {
     max-width: 75%;
     margin-right: 0;
+    padding-left: 0;
   }
+  
 
   .right-section {
     display: none;
