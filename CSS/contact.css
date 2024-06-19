@@ -119,13 +119,3 @@ button:hover {
 .is-invalid {
   border-color: #dc3545;
 }
-
-.call-to-action {
-  text-align: center;
-  margin: 0 3rem 40px 3rem;
-}
-
-.call-to-action h3 {
-  font-weight: 400;
-  font-style: italic;
-}

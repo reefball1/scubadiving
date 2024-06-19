@@ -274,3 +274,60 @@ a:hover {
 .new-page-header .headline {
   margin-bottom: 0;
 }
+
+.pricing-section {
+  max-width: 90%;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pricing-section h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.pricing-section h2 {
+  color: #22537a;
+  margin: 2rem 0 1rem;
+}
+
+.pricing-intro {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.pricing-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-text {
+  flex: 1;
+  padding: 1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-left: 4rem;
+  text-align: justify;
+}
+
+.call-to-action {
+  text-align: center;
+  margin: 0 3rem 40px 3rem;
+}
+
+.call-to-action h3 {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pricing-image {
+  flex: 1;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+}
