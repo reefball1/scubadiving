@@ -1,8 +1,8 @@
 .contact-header {
   background: linear-gradient(rgba(0, 0, 0, 0.5),
           rgba(0, 0, 0, 0.5)),
-      url('../images/fish.jpg');
-  background-position: 50% 85%;
+      url('../images/contact.jpeg');
+  background-position: 50% 53%;
   background-size: cover;
 }
 
