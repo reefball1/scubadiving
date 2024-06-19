@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var result = document.getElementById("result");
 
   form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); 
     if (!form.checkValidity()) {
       event.stopPropagation();
       result.style.color = 'red'
@@ -47,9 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .then(function () {
         form.reset();
-        setTimeout(() => {
-          result.style.display = "none";
-        }, 3000);
       });
   }, false);
 
