@@ -46,3 +46,13 @@
     margin: 10px 0;
     line-height: 1.6;
 }
+
+.call-to-action {
+    text-align: center;
+    margin: 0 3rem 40px 3rem;
+}
+
+.call-to-action h3 {
+    font-weight: 300;
+    font-style: italic;
+}
