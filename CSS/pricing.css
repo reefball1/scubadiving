@@ -1,7 +1,7 @@
 .pricing-header {
   background: linear-gradient(rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)),
-    url('../images/pricing-header.jpeg');
+    url('../images/pricing-header.avif');
   background-position: 50% 65%;
   background-size: cover;
 }
