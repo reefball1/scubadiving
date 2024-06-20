@@ -192,7 +192,7 @@ ul.check_bullet li::before {
   margin-bottom: 50px;
   color: white;
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
 }
 
 .bio-section-info a {
@@ -317,7 +317,7 @@ a:hover {
   flex-direction: column;
   padding: 1rem;
   justify-content: center;
-  text-align: justify;
+  text-align: left;
   max-width: 50%;
   color: #333;
   line-height: 1.8;
