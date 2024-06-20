@@ -93,6 +93,13 @@ ul.check_bullet li::before {
   top: 0;
 }
 
+ul.check_bullet .no-bullet-point {
+  list-style: none;
+}
+ul.check_bullet .no-bullet-point::before {
+  content: none;
+}
+
 .tiles {
   display: flex;
   flex-wrap: wrap;
