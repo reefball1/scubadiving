@@ -336,3 +336,12 @@ a:hover {
 .split-section .centered {
   align-items: center;
 }
+
+.inline-anchor {
+  all: unset;
+  text-decoration: underline;
+}
+
+.inline-anchor:hover {
+  cursor: pointer;
+}
