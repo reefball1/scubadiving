@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("form");
   var result = document.getElementById("result");
+  var successMessage = document.getElementById("success-message");
 
   form.addEventListener("submit", function (event) {
-    event.preventDefault(); 
+    event.preventDefault();
     if (!form.checkValidity()) {
       event.stopPropagation();
-      result.style.color = 'red'
+      result.style.color = 'red';
       result.innerHTML = "Please fill out all required fields.";
       result.style.display = "block";
       form.classList.add("was-validated");
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     result.innerHTML = "Please wait...";
-    result.style.color = 'gray'
+    result.style.color = 'gray';
     form.classList.add("was-validated");
 
     const formData = new FormData(form);
@@ -32,21 +33,21 @@ document.addEventListener("DOMContentLoaded", function () {
       .then(async (response) => {
         let json = await response.json();
         if (response.status == 200) {
-          result.innerHTML = json.message;
-          result.style.color = 'green'
+          form.style.display = "none";
+          successMessage.style.display = "block";
+          result.innerHTML = "";
+          clearValidationState();
+          form.reset();
         } else {
           console.log(response);
           result.innerHTML = json.message;
-          result.style.color = 'red'
+          result.style.color = 'red';
         }
       })
       .catch(error => {
         console.log(error);
         result.innerHTML = "Something went wrong!";
-        result.style.color = 'red'
-      })
-      .then(function () {
-        form.reset();
+        result.style.color = 'red';
       });
   }, false);
 
@@ -118,5 +119,13 @@ document.addEventListener("DOMContentLoaded", function () {
     for (var i = 0; i < numbers.length; i++) {
       input.value += (char[i] || '') + numbers[i];
     }
+  }
+
+  function clearValidationState() {
+    inputs.forEach(function (input) {
+      input.classList.remove("is-invalid");
+      input.setCustomValidity("");
+    });
+    form.classList.remove("was-validated");
   }
 });
