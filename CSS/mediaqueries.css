@@ -1,6 +1,33 @@
 @media screen and (max-width: 1200px) {
   .steps-container {
     flex-direction: column;
+    margin: 1.5rem;
+  }
+  .lifted-section h1 {
+    font-size: 1.5em;
+  }
+
+  .split-section {
+    margin: 0;
+  }
+  .split-section-left-side,
+.split-section-right-side {
+  max-width: 75%;
+  margin: 0;
+  padding: 0;
+  }
+
+
+  .split-section ul{
+    padding: 0 .75rem;
+  }
+
+  .split-section .indent-bullets {
+    padding-left: 2rem;
+  }
+
+  .lifted-section h1 {
+    margin: 2rem 3rem;
   }
 
   .step {
@@ -18,8 +45,11 @@
   }
 
   .lifted-section {
-    margin-top: 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
+
   .form-side {
     flex: 1.5;
   }

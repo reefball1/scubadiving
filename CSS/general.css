@@ -299,15 +299,7 @@ a:hover {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-}
-
-.split-section-left-text {
-  flex: 1;
-  padding: 1rem;
-  color: #333;
-  line-height: 1.8;
-  margin-left: 4rem;
-  text-align: justify;
+  gap: 1.5rem;
 }
 
 .call-to-action {
@@ -319,10 +311,29 @@ a:hover {
   font-weight: 400;
   font-style: italic;
 }
-
-.split-section-right-image {
+.split-section-left-side,
+.split-section-right-side {
   flex: 1;
   display: flex;
+  flex-direction: column;
   padding: 1rem;
   justify-content: center;
+  text-align: justify;
+  max-width: 50%;
+  color: #333;
+  line-height: 1.8;
+}
+
+.split-section-left-side {
+  margin-left: 1rem;
+}
+
+.split-section img{
+  max-width: 90%;
+  border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.split-section .centered {
+  align-items: center;
 }
