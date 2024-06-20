@@ -30,7 +30,7 @@ body {
 .top-section {
   background: linear-gradient(rgba(0, 0, 0, 0.35),
       rgba(0, 0, 0, 0.35)),
-    url('../images/cover-photo.jpg') black;
+    url('../images/cover-photo.avif') black;
   background-size: cover;
   padding-top: 250px;
   display: grid;
