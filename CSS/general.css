@@ -262,7 +262,7 @@ a:hover {
 .youtube-button::before {
   content: '';
   display: inline-block;
-  background-image: url('../images/favicon_package_v0.16/youtube.svg');
+  background-image: url('../images/youtube.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 2em;
