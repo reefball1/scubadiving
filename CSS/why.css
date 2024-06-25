@@ -13,6 +13,46 @@
   margin: 3rem;
 }
 
+.why-dive-videos-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem 3rem 3rem
+}
+
+.why-dive-videos-upper-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.why-dive-youtube-button {
+  all: unset;
+  color: black;
+}
+
+.why-dive-videos-lower-section {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.video-1, .video-2, .video-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.video-1 iframe,
+.video-2 iframe,
+.video-3 iframe {
+  height: 100%;
+  width: 100%;
+  min-height: 30vh;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .why-page-text-side li {
   text-align: left;
   line-height: 2rem;
