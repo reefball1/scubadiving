@@ -44,13 +44,18 @@
 
 .video-1 iframe,
 .video-2 iframe,
-.video-3 iframe {
+.video-3 iframe,
+.video-4 iframe {
   height: 100%;
   width: 100%;
-  min-height: 30vh;
+  min-height: 275px;
   border-radius: 20px;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-4 {
+  display: none;
 }
 
 .why-page-text-side li {

@@ -17,6 +17,9 @@
   padding: 0;
   }
 
+  .video-4 {
+    display: block;
+  }
   .why-dive-videos-lower-section {
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -24,10 +27,11 @@
 
   .video-1 iframe,
 .video-2 iframe,
-.video-3 iframe {
+.video-3 iframe,
+.video-4 iframe {
   height: 100%;
   width: 100%;
-  min-height: 20vh;
+  min-height: 250px;
 }
 
 
@@ -261,4 +265,5 @@
   .why-dive-videos-lower-section {
     grid-template-columns: 1fr;
   }
+
 }
