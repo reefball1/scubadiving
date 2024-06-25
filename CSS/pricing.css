@@ -53,6 +53,7 @@
 
 .accordion-button {
   font-size: 15px;
+  color: black;
 }
 .accordion-button:hover {
   background-color: #e2e2e2;
