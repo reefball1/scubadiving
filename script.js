@@ -63,3 +63,29 @@ window.onload = function () {
   updateHeaderStyles();
 }
 
+
+function linkToAccordion(accordionID) {
+  document.getElementById(accordionID).onclick = function() {
+    toggleAccordion(accordionID);
+  }
+}
+
+function toggleAccordion(buttonID) {
+  const button = document.getElementById(buttonID);
+  const content = button.nextElementSibling;
+  const arrow = button.querySelector('.arrow');
+  if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      arrow.classList.remove('down');
+  } else {
+      content.style.maxHeight = content.scrollHeight + 'px';
+      arrow.classList.add('down');
+  }
+}
+
+linkToAccordion('mask-accordion')
+linkToAccordion('snorkel-accordion')
+linkToAccordion('fins-accordion')
+linkToAccordion('bag-accordion')
+linkToAccordion('wetsuit-accordion')
+linkToAccordion('dive-computer-accordion')

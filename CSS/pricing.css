@@ -30,3 +30,52 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 0.5rem;
 }
+
+.accordion {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.accordion-button {
+  font-size: 15px;
+}
+.accordion-button:hover {
+  background-color: #e2e2e2;
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 15px;
+}
+.accordion-content p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+.arrow {
+  transition: transform 0.3s;
+  transform-origin: center;
+}
+.arrow.down {
+  transform: rotate(180deg);
+}
+.arrow-svg {
+  fill: #5f6368;
+  width: 24px;
+  height: 24px;
+}

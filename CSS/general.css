@@ -352,3 +352,20 @@ a:hover {
 .inline-anchor:hover {
   cursor: pointer;
 }
+
+.embedded-link {
+  all: unset;
+  text-decoration: underline;
+}
+
+.embedded-link:hover {
+  transition: all 0.15s ease-in-out;
+  opacity: 70%;
+  color: unset;
+  cursor: pointer;
+}
+
+.embedded-link:active {
+  all: unset;
+  cursor: default;
+}
