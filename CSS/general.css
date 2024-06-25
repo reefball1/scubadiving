@@ -355,17 +355,21 @@ a:hover {
 
 .embedded-link {
   all: unset;
-  text-decoration: underline;
+  color: #007BFF;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;    
 }
 
 .embedded-link:hover {
-  transition: all 0.15s ease-in-out;
-  opacity: 70%;
-  color: unset;
+  transition: all 0.1s ease-in-out;
+  color: #007BFF;
+  opacity: 100%;
   cursor: pointer;
+  border-bottom: 1px solid #007BFF;    
 }
 
 .embedded-link:active {
   all: unset;
   cursor: default;
+  color: #007BFF;
 }
