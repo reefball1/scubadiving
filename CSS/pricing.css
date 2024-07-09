@@ -76,6 +76,7 @@
   transform: rotate(180deg);
 }
 .arrow-svg {
+  display: flex;
   fill: #5f6368;
   width: 24px;
   height: 24px;
