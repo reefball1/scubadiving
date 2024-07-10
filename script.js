@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('resize', function() {
     const header = document.querySelector("#header");
-    if (window.innerWidth <= 1200 && header.classList.contains('open')) {
+    if (window.innerWidth >= 1200 && header.classList.contains('open')) {
       toggleMenu();
     }
   })
