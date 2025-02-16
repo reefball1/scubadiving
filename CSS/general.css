@@ -251,7 +251,7 @@ a:hover {
   animation: 1.5s ease-out 0s 1 slideDown;
 }
 
-.youtube-button {
+.youtube-button, .instagram-button {
   margin-top: 10px;
   display: inline-flex;
   align-items: center;
@@ -263,6 +263,18 @@ a:hover {
   content: '';
   display: inline-block;
   background-image: url('../images/youtube.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 2em;
+  height: 2em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.instagram-button::before {
+  content: '';
+  display: inline-block;
+  background-image: url('../images/instagram.svg');
   background-size: contain;
   background-repeat: no-repeat;
   width: 2em;
