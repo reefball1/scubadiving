@@ -157,6 +157,22 @@
     padding-bottom: 20px;
   }
 
+  .testimonials-section {
+    padding: 40px 20px;
+  }
+
+  .testimonials-title {
+    font-size: 28px;
+  }
+
+  .testimonial-card {
+    padding: 25px 20px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+  }
+
   .why-page-first-section,
   .why-page-second-section {
     grid-template-columns: 1fr;
@@ -264,6 +280,34 @@
 
   .why-dive-videos-lower-section {
     grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 20px 15px;
+  }
+
+  .testimonials-title {
+    font-size: 24px;
+  }
+
+  .testimonials-section {
+    padding: 30px 20px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .slider-controls {
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .slider-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
 
 }

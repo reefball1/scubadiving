@@ -1,0 +1,171 @@
+.testimonials-section {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+}
+
+.testimonials-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-size: 32px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: Montserrat, Arial;
+}
+
+.testimonials-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 8px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s ease;
+  display: none;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.testimonial-card.active {
+  display: flex;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.testimonial-content {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin: 0;
+  font-family: Montserrat, Arial;
+  font-weight: 300;
+  text-align: left;
+}
+
+.testimonial-author {
+  border-top: 2px solid #22537a;
+  padding-top: 15px;
+  margin-top: auto;
+}
+
+.author-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #22537a;
+  margin-bottom: 5px;
+  font-family: Montserrat, Arial;
+}
+
+.author-details {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  margin: 0;
+  font-family: Montserrat, Arial;
+  font-weight: 300;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.slider-btn {
+  background: #22537a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-btn:hover {
+  background: #1a3f5a;
+  transform: scale(1.1);
+}
+
+.slider-btn:active {
+  transform: scale(0.95);
+}
+
+.slider-dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #22537a;
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background: #888;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Quote styling */
+.testimonial-text::before {
+  content: '"';
+  font-size: 24px;
+  color: #22537a;
+  font-weight: bold;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+.testimonial-text::after {
+  content: '"';
+  font-size: 24px;
+  color: #22537a;
+  font-weight: bold;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* Remove quotes from nested paragraphs */
+.testimonial-text + .testimonial-text::before {
+  content: none;
+}
+
+.testimonial-text:last-of-type::after {
+  content: '"';
+}

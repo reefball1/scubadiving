@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/header.css">
   <link rel="stylesheet" href="./CSS/general.css">
+  <link rel="stylesheet" href="./CSS/testimonials.css">
   <link rel="stylesheet" href="./CSS/footer.css">
   <link rel="stylesheet" href="./CSS/mediaqueries.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,6 +122,58 @@
       <h2>Sign Up & Contact</h2>
       <p>Get in touch with us to start your journey.</p>
       <a href="./contact">Contact Us</a>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <div class="testimonials-container">
+      <h2 class="testimonials-title">What Our Students Say</h2>
+      
+      <div class="testimonials-slider">
+        <div class="testimonial-card active">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              I have known Darin as an Instructor and friend for nearly a year now! His instruction is INCREDIBLE. I met Darin when he was my instructor for my wreck and search & recovery specialties! Both of which are VERY technical and definitely present hazards... Needless to say I have never had an instructor with whom I felt so safe, confident, and eager to keep learning! His attention to detail, confidence in me, and passion for diving are unparalleled. Darin continuously challenged me and made sure I was able to meet those challenges! On top of everything he guided me with pro tips that I will be using in my scuba career path (I am getting my DM this October thanks to Darin's support and encouragement ❤️).
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <p class="author-name">N.S. - Boston, MA</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              My 11-year-old son Eli had the incredible opportunity to become junior open water certified, diving one-on-one with Darin over three days in Ft. Lauderdale. Darin was patient, thorough, and truly passionate about teaching. He made sure Eli understood every concept, building his confidence step by step, and celebrated his progress along the way. It was clear Darin genuinely cared—not just about the skills, but about creating a memorable and empowering experience. I couldn't have asked for a better instructor.
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <p class="author-name">Roy Wagner, parent of Eli, Age 11</p>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              When I completed my basic SCUBA training, I asked several local Divemasters who they considered the best instructor in the area. Every one of them gave me the same name: Darin Artman. Training with Darin provided me with the strongest foundation I could have hoped for. Under his guidance, I completed Wreck Diving, Deep Water Training, Search and Recovery, and Underwater Navigation at a variety of sites along Florida's Atlantic coast and the Florida Keys. I also earned my Rescue Diver certification with him, which ultimately led to achieving my Master Diver rating. I believe that great fundamental training builds skills and confidence that last a lifetime. Thanks to Darin's comprehensive approach, I've been able to explore wreck interiors at depths of 130 feet with complete self-assurance. His instruction also gave me the situational awareness necessary to feel at ease supervising my children in the water. My only regret is that I don't get to dive with Darin as often as I'd like. His expertise and dedication make every dive a learning experience, and we have so much damn fun!
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <p class="author-name">WM - Fort Lauderdale</p>
+            <p class="author-details">Master Diver Certified</p>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn prev-btn" onclick="changeTestimonial(-1)">‹</button>
+          <div class="slider-dots">
+            <span class="dot active" onclick="currentTestimonial(1)"></span>
+            <span class="dot" onclick="currentTestimonial(2)"></span>
+            <span class="dot" onclick="currentTestimonial(3)"></span>
+          </div>
+          <button class="slider-btn next-btn" onclick="changeTestimonial(1)">›</button>
+        </div>
+      </div>
     </div>
   </section>
 

@@ -101,4 +101,43 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   })
 
+  let currentTestimonialIndex = 1;
+  const totalTestimonials = 3;
+
+  window.changeTestimonial = function(direction) {
+    const cards = document.querySelectorAll('.testimonial-card');
+    const dots = document.querySelectorAll('.dot');
+    
+    cards[currentTestimonialIndex - 1].classList.remove('active');
+    dots[currentTestimonialIndex - 1].classList.remove('active');
+    
+    currentTestimonialIndex += direction;
+    
+    if (currentTestimonialIndex > totalTestimonials) {
+      currentTestimonialIndex = 1;
+    } else if (currentTestimonialIndex < 1) {
+      currentTestimonialIndex = totalTestimonials;
+    }
+    
+    cards[currentTestimonialIndex - 1].classList.add('active');
+    dots[currentTestimonialIndex - 1].classList.add('active');
+  }
+
+  window.currentTestimonial = function(index) {
+    const cards = document.querySelectorAll('.testimonial-card');
+    const dots = document.querySelectorAll('.dot');
+    
+    cards.forEach(card => card.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Set current index and add active class
+    currentTestimonialIndex = index;
+    cards[index - 1].classList.add('active');
+    dots[index - 1].classList.add('active');
+  }
+
+  setInterval(() => {
+    changeTestimonial(1);
+  }, 25000);
+
 })
