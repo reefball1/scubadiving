@@ -51,7 +51,7 @@ export default function Footer() {
           </p>
 
           <div className="flex flex-col items-center gap-1 text-xs text-white/50">
-            <p>© 2024 FTL Scuba Diving, All Rights Reserved</p>
+            <p>© 2026 FTL Scuba Diving, All Rights Reserved</p>
             <p>
               Website designed by{" "}
               <a

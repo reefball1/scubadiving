@@ -265,20 +265,11 @@ export default function Home() {
               </h2>
               <div className="space-y-4 text-[#4a5568] leading-relaxed">
                 <p>
-                  Want to learn how to scuba dive in Fort Lauderdale? You came to the right place.
-                  Darin was born in South Florida where he fell in love with snorkeling in the ocean
-                  as a young child. In college he became a certified diver and while living in New
-                  Jersey became an avid wreck diver and completed his PADI (Professional Association
-                  of Diving Instructors) Divemaster training.
-                </p>
-                <p>
-                  After moving back to South Florida, he retired from a career as a corporate
-                  executive, and became a dive instructor to share his passion for the ocean with
-                  others.
-                </p>
-                <p>
-                  He loves opening the underwater world to new scuba divers and coaching experienced
-                  divers to become more knowledgeable, comfortable, and safe divers.
+                Want to learn how to scuba dive in Fort Lauderdale? You came to the right place. <br />
+                Darin was born in South Florida where he fell in love with snorkeling in the ocean as a young child. In college he became a certified diver and while living in New Jersey became an avid wreck diver and completed his PADI (Professional Association of Diving Instructors) Divemaster training. After moving back to South Florida, he retired from a career as a corporate executive, and became a dive instructor to share his passion for the ocean with others.<br /><br />
+                He loves opening the underwater world to new scuba divers and coaching experienced divers to become more knowledgeable, comfortable, and safe divers.
+
+                Let&apos;s go diving!
                 </p>
                 <p className="font-semibold text-[#0f2232]">Let&apos;s go diving!</p>
               </div>

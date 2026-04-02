@@ -4,7 +4,8 @@ import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Why Dive?",
-  description: "Discover the transformative experience of scuba diving in Fort Lauderdale.",
+  description:
+    "Discover the transformative experience of scuba diving in Fort Lauderdale.",
 };
 
 const reasons = [
@@ -53,23 +54,27 @@ export default function WhyPage() {
           </h2>
           <div className="space-y-6 text-[#4a5568] text-lg leading-relaxed">
             <p>
-              Imagine floating weightlessly like an astronaut, watching colorful fish, or exploring
-              shipwrecks. Scuba diving immerses you in a world that many people never get to see
-              firsthand. With your Open Water Scuba Diver certification, you gain access to this
-              world in a safe and educated manner.
+              Imagine floating weightlessly like an astronaut, watching colorful
+              fish, or exploring shipwrecks. Scuba diving immerses you in a
+              world that many people never get to see firsthand. With your Open
+              Water Scuba Diver certification, you gain access to this world in
+              a safe and educated manner.
             </p>
             <p>
-              Scuba diving is not just another sport; it&apos;s a transformative experience that
-              allows you to witness life under the waves. It is an activity that can be enjoyed at
-              almost any age and can be combined with travel to some of the most beautiful
-              destinations in the world.
+              Scuba diving is not just another sport; it&apos;s a transformative
+              experience that allows you to witness life under the waves. It is
+              an activity that can be enjoyed at almost any age and can be
+              combined with travel to some of the most beautiful destinations in
+              the world.
             </p>
             <p>
-              Underwater is one of the few places in the world where you can truly &apos;check
-              out&apos;. No emails, text messages, or social media while diving!
+              Underwater is one of the few places in the world where you can
+              truly &apos;check out&apos;. No emails, text messages, or social
+              media while diving!
             </p>
             <p className="italic text-[#1a2533] border-l-4 border-[#1a6b9a] pl-4">
-              It&apos;s also an excellent gift for the family member who has always wanted to dive!
+              It&apos;s also an excellent gift for the family member who has
+              always wanted to dive!
             </p>
           </div>
         </div>
@@ -106,7 +111,9 @@ export default function WhyPage() {
                 </span>
                 <div>
                   <h3 className="font-bold text-[#0f2232] mb-2">{r.title}</h3>
-                  <p className="text-[#4a5568] text-sm leading-relaxed">{r.body}</p>
+                  <p className="text-[#4a5568] text-sm leading-relaxed">
+                    {r.body}
+                  </p>
                 </div>
               </div>
             ))}
@@ -119,7 +126,8 @@ export default function WhyPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-extrabold text-[#0f2232] mb-4">
-              Here are my most recent diving videos—join us and create amazing memories!
+              Here are my most recent diving videos—join us and create amazing
+              memories!
             </h2>
             <a
               href="https://www.youtube.com/@reefball1"
@@ -128,7 +136,7 @@ export default function WhyPage() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#ff0000] hover:bg-[#cc0000] text-white font-semibold rounded-full transition-all duration-300 shadow hover:shadow-md"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
               </svg>
               Click here for more videos
             </a>
@@ -140,7 +148,10 @@ export default function WhyPage() {
               "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1&index=3",
               "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1&index=4",
             ].map((src, i) => (
-              <div key={i} className="relative aspect-video rounded-2xl overflow-hidden shadow-lg">
+              <div
+                key={i}
+                className="relative aspect-video rounded-2xl overflow-hidden shadow-lg"
+              >
                 <iframe
                   src={src}
                   allowFullScreen
@@ -162,17 +173,28 @@ export default function WhyPage() {
         <div className="absolute inset-0 bg-[#0f2232]/80" />
         <div className="relative z-10 max-w-3xl mx-auto text-center">
           <h3 className="text-xl sm:text-2xl font-semibold text-white leading-relaxed mb-8">
-            Do you want to explore the world and the animals in it? Are you looking for a new
-            activity to do with friends, an excuse to experience the great outdoors, or just some
-            peace and quiet? If so, it&apos;s time to learn to dive today.
+            Do you want to explore the world and the animals in it? Are you
+            looking for a new activity to do with friends, an excuse to
+            experience the great outdoors, or just some peace and quiet? If so,
+            it&apos;s time to learn to dive today.
           </h3>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-white/15 hover:bg-white/25 text-white font-semibold rounded-full border border-white/30 transition-all duration-300 backdrop-blur-sm"
           >
             Get Started Today
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2.5}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </Link>
         </div>

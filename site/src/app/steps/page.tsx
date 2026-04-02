@@ -19,7 +19,7 @@ const steps = [
   {
     num: "02",
     title: "Pool or Confined Water",
-    desc: "Work one-on-one with your instructor to master breathing underwater, handling scuba equipment, and the key skills you'll use on every dive.",
+    desc: "Work with an experienced instructor to master the basics of working with scuba equipment, breathing and swimming underwater, and handling situations you're likely to encounter.",
     img: "/images/pool.avif",
     alt: "Diver in pool",
     time: "~5–8 hours",
@@ -27,7 +27,7 @@ const steps = [
   {
     num: "03",
     title: "Go Diving",
-    desc: "Put your skills to work in the ocean or a lake. We'll do 4 open water dives across about 2 half-days — and have a great time doing it.",
+    desc: "In the ocean (from shore or from a boat), or in a large body of water like a lake, put your scuba skills to work while enjoying the underwater environment.",
     img: "/images/go-diving.png",
     alt: "Sitting on boat",
     time: "~2 half-days",
@@ -85,7 +85,7 @@ export default function StepsPage() {
           </div>
 
           <p className="mt-6 text-center text-[#4a5568] italic text-sm max-w-2xl mx-auto">
-            Note: time estimates are averages — it depends on how quickly you master the specific skills. We will always work at your pace.
+            Note: time estimates are averages — it depends on how quickly you master the specific skills and performance requirements.<br />We will always work at your pace.
           </p>
         </div>
       </section>
