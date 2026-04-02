@@ -68,7 +68,7 @@ export default function AdvancedPage() {
                 </li>
                 <li className="flex gap-2">
                   <span className="mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#1a6b9a]" />
-                  3 dives in areas of your choice — Night, Buoyancy, Fish ID, Wreck, or Drift
+                  3 dives in areas of your choice, such as Night, Buoyancy, Fish Identification, Wreck, or Drift
                 </li>
               </ul>
             </div>
@@ -82,7 +82,7 @@ export default function AdvancedPage() {
               <h3 className="font-bold text-[#0f2232] text-lg mb-3">Why it matters</h3>
               <p className="text-[#4a5568] text-sm leading-relaxed">
                 Every dive after your Open Water cert builds confidence and skill. Formal
-                training accelerates that — you&apos;ll learn techniques that take recreational
+                training accelerates that. You&apos;ll learn techniques that take recreational
                 divers years to figure out on their own, and you&apos;ll dive with far greater
                 self-assurance from the start.
               </p>

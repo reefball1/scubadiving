@@ -26,7 +26,8 @@ export default function PricingPage() {
             How much does it cost to dive?
           </h2>
           <p className="text-center text-[#4a5568] mb-6 max-w-2xl mx-auto">
-            Like many things in life, it depends — but we promise full transparency upfront.
+            Like many things in life, it depends! But we promise full
+            transparency upfront.
           </p>
 
           {/* Pricing card — full width */}
@@ -37,7 +38,9 @@ export default function PricingPage() {
                   Open Water Certification
                 </p>
                 <p className="text-5xl font-extrabold">$900–$1,200</p>
-                <p className="text-white/70 text-sm mt-1">Private instruction, all-inclusive</p>
+                <p className="text-white/70 text-sm mt-1">
+                  Private instruction, all-inclusive
+                </p>
               </div>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 md:text-right">
                 {[
@@ -46,9 +49,22 @@ export default function PricingPage() {
                   "2 days of open water dives",
                   "Rental equipment included",
                 ].map((item) => (
-                  <li key={item} className="flex items-center gap-2 text-sm text-white/80">
-                    <svg className="w-4 h-4 text-[#2a8fc9] flex-shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  <li
+                    key={item}
+                    className="flex items-center gap-2 text-sm text-white/80"
+                  >
+                    <svg
+                      className="w-4 h-4 text-[#2a8fc9] flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2.5}
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
                     </svg>
                     {item}
                   </li>
@@ -61,21 +77,24 @@ export default function PricingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-[#4a5568] leading-relaxed">
             <div className="space-y-4">
               <p>
-                In full transparency, diving is not an inexpensive sport — but it&apos;s
-                comparable to activities like snow skiing, golfing, or even a Florida Theme Park
-                visit.
+                In full transparency, diving is not an inexpensive sport, but it
+                is comparable to activities like snow skiing, golfing, or even
+                visiting a Florida Theme Park.
               </p>
               <p>
-                The specific costs will depend on factors such as the size of your party and
-                where we choose to dive. We&apos;ll build a package to meet your needs.
+                The specific costs will depend on factors such as the size of
+                your party and where we choose to dive. We&apos;ll build a
+                package to meet your needs.
               </p>
             </div>
             <div>
               <p className="italic text-sm bg-[#f0f7ff] border border-[#1a6b9a]/15 rounded-xl p-5">
-                Note: some dive shops advertise a low teaser price that doesn&apos;t include
-                everything you&apos;ll actually pay to complete your certification — or they
-                keep costs down by mixing you into a large group of strangers. We guarantee a
-                full, comprehensive price upfront with fully private instruction.
+                Note that some dive shops will offer a low teaser price that is
+                literally too good to be true, and doesn&apos;t include all of the
+                costs you will actually pay to complete your certification. They
+                may also offer a low price by combining a large group of
+                strangers together. We will guarantee a full/comprehensive price
+                upfront.
               </p>
             </div>
           </div>
@@ -106,8 +125,16 @@ export default function PricingPage() {
           {/* Required gear — glass cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
             {[
-              { img: "/images/mask.jpg", label: "Scuba Mask", note: "Required" },
-              { img: "/images/snorkel.avif", label: "Snorkel", note: "Required" },
+              {
+                img: "/images/mask.jpg",
+                label: "Scuba Mask",
+                note: "Required",
+              },
+              {
+                img: "/images/snorkel.avif",
+                label: "Snorkel",
+                note: "Required",
+              },
               { img: "/images/fins.jpeg", label: "Fins", note: "Required" },
             ].map((item) => (
               <div
@@ -149,8 +176,18 @@ export default function PricingPage() {
             className="inline-flex items-center gap-2 px-8 py-4 bg-white/15 hover:bg-white/25 text-white font-semibold rounded-full border border-white/30 transition-all duration-300 backdrop-blur-sm"
           >
             Contact Us
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth={2.5}
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
             </svg>
           </Link>
         </div>

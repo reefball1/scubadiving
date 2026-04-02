@@ -2,24 +2,24 @@ const requiredGear = [
   {
     id: "mask",
     title: "Mask",
-    body: "Get any scuba-quality mask that seals well against your face — try on several without the strap. A black skirt reduces glare (like wearing a hat). You'll need to scrub the lens with non-gel toothpaste before first use.",
+    body: "Get any scuba-quality mask that is comfortable and seals well against your face. Hold them to your face without the strap and try on several. I like a black skirt rather than a clear skirt for better vision (like wearing a hat to reduce sun glare). You'll need to clean the lens with an abrasive (not gel) toothpaste or inexpensive mask scrub product before you use it.",
     link: { href: "https://youtube.com/shorts/axZO7pCCDGg?feature=share", label: "Watch: Choosing a Scuba Mask" },
   },
   {
     id: "snorkel",
     title: "Snorkel",
-    body: "Keep it simple — you won't use it much while diving. Skip the fancy self-sealing 'stays dry' models. Most have a purge valve on the bottom, which makes clearing water easier.",
+    body: "Don't spend much money on a snorkel since you won't use it very much while diving. You don't want anything fancy or self-sealing/'stays dry.' Most have a purge valve on the bottom which makes it easier to clear water from the snorkel.",
   },
   {
     id: "fins",
     title: "Fins",
-    body: "Go with open-heel fins and booties — more versatile than full-foot fins in varying water temps. Spring or bungee straps are easier on/off and last longer than buckle straps. Paddle style gives better power in currents. My personal favorites: Apeks RK3s. Good brands: Scubapro, Aqualung, Mares, Apeks, Cressi, Tusa, Atomic.",
+    body: "2 main styles: Open heel with a heel strap, and full-foot. Full-foot fins are typically ligher weight, and usually don't give you as much propulsion, and you can't wear booties with them in colder water, so I recommend open heel fins with booties for scuba diving. Fins with spring straps or bungee straps are easier to get on/off and last longer than ones with a traditional strap and buckle. Fins also come in 'split fin' and traditional/paddle styles. The split fins claim they are easier to kick and more efficient, but I prefer that traditional style for better power in currents and better control. Note: my personal favorite fins are the Apeks RK3s. Good quality brands for these gear that I like include Scubapro, Aqualung, Mares, Apeks, Fourth Element, Dive Rite, Cressi, Tusa, Hollis, Oceanic, Atomic, and Halcyon (among others).",
     link: { href: "https://youtube.com/shorts/X8hsRty0Ccg?feature=share", label: "Watch: Top 3 Favorite Fins" },
   },
   {
     id: "bag",
     title: "Mesh Bag",
-    body: "A mesh backpack lets you dunk all your gear in a rinse tank after diving. The Stahlsac line is excellent — waterproof compartment, holds a lot.",
+    body: "A mesh backpack makes it easy to carry your gear and dunk the whole thing in a rinse tank after diving. My favorite is the Stahlsac line which also have a waterproof compartment and they hold a lot.",
   },
 ];
 
@@ -27,12 +27,12 @@ const optionalGear = [
   {
     id: "wetsuit",
     title: "Wetsuit",
-    body: "A 3mm full suit covers most of the year in Fort Lauderdale. In late summer when water hits the mid-80s°F, a bathing suit and rash guard is plenty. We provide wetsuits in the course fee, but your own suit fits better and hasn't been worn by strangers.",
+    body: "A 3mm thick full wetsuit is usually sufficient for all but the coldest months in Fort Lauderdale. In late summer, when water temperatures are in the mid 80s, just a bathing suit and rash-guard long sleeve top are comfortable for most people. We will provide wetsuits as part of the course fee, but if you're going to dive often, it's nice to have your own suit that fits you perfectly and has never been peed in (by anyone but you).",
   },
   {
     id: "computer",
     title: "Dive Computer",
-    body: "I'll show you a few options during the class and walk you through how to use them. I recommend buying one, but wait until after the class so you know what to look for.",
+    body: "I will show you a few options during the class, as well as how to use them. I recommend buying one, but not before the class.",
     link: { href: "https://youtube.com/shorts/XPbNahWa_kk?feature=share", label: "Watch: Dive Computers" },
   },
 ];
