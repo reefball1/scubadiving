@@ -57,7 +57,7 @@ export default function TestimonialsSlider() {
       <div className="flex items-center justify-center gap-6 mt-8">
         <button
           onClick={prev}
-          className="w-10 h-10 rounded-full border border-white/30 text-white hover:bg-white/15 flex items-center justify-center transition-colors duration-200 text-lg font-bold"
+          className="w-10 h-10 rounded-full border border-white/30 text-white hover:bg-white/15 flex items-center justify-center transition-colors duration-200 text-lg font-bold cursor-pointer"
           aria-label="Previous testimonial"
         >
           ‹
@@ -80,7 +80,7 @@ export default function TestimonialsSlider() {
 
         <button
           onClick={next}
-          className="w-10 h-10 rounded-full border border-white/30 text-white hover:bg-white/15 flex items-center justify-center transition-colors duration-200 text-lg font-bold"
+          className="w-10 h-10 rounded-full border border-white/30 text-white hover:bg-white/15 flex items-center justify-center transition-colors duration-200 text-lg font-bold cursor-pointer"
           aria-label="Next testimonial"
         >
           ›
