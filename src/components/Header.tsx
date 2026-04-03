@@ -1,33 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { href: "/", label: "HOME" },
-  { href: "/why", label: "WHY DIVE?" },
-  { href: "/steps", label: "LEARNING STEPS" },
-  { href: "/pricing", label: "PRICING & EQUIPMENT" },
-  { href: "/advanced", label: "ADVANCED" },
-  { href: "/testimonials", label: "TESTIMONIALS" },
-  { href: "/contact", label: "CONTACT" },
+  { href: "#home", label: "HOME" },
+  { href: "#why", label: "WHY DIVE?" },
+  { href: "#steps", label: "LEARNING STEPS" },
+  { href: "#advanced", label: "ADVANCED" },
+  { href: "#pricing", label: "PRICING & EQUIPMENT" },
+  { href: "#testimonials", label: "TESTIMONIALS" },
+  { href: "#contact", label: "CONTACT" },
 ];
 
 export default function Header() {
-  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 25);
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  useEffect(() => {
-    setMenuOpen(false);
-    setScrolled(false);
-  }, [pathname]);
 
   const transparent = !scrolled && !menuOpen;
   const bg = scrolled || menuOpen ? "bg-white shadow-md" : "bg-transparent";
@@ -39,7 +33,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <a href="#home" className="flex items-center">
             <img
               src="/images/new-logo.png"
               alt="FTL Scuba Diving"
@@ -47,35 +41,27 @@ export default function Header() {
                 transparent ? "brightness-0 invert" : ""
               }`}
             />
-          </Link>
+          </a>
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-1">
-            {navLinks.map((link) => {
-              const active =
-                link.href === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(link.href.replace("/#", ""));
-              return (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={`px-3 py-1.5 text-xs font-semibold tracking-widest rounded-md transition-all duration-200
-                    ${transparent ? "text-white hover:bg-white/20" : "text-[#0f2232] hover:bg-[#0f2232]/10"}
-                    ${active && !transparent ? "border-b-2 border-[#1a6b9a]" : ""}
-                    ${active && transparent ? "border-b-2 border-white" : ""}
-                  `}
-                >
-                  {link.label}
-                </Link>
-              );
-            })}
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className={`px-3 py-1.5 text-xs font-semibold tracking-widest rounded-md transition-all duration-200
+                  ${transparent ? "text-white hover:bg-white/20" : "text-[#0f2232] hover:bg-[#0f2232]/10"}
+                `}
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
 
           {/* Hamburger */}
           <button
             onClick={() => setMenuOpen((o) => !o)}
-            className={`lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px] rounded-md transition-colors duration-200 hover:bg-black/10`}
+            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px] rounded-md transition-colors duration-200 hover:bg-black/10"
             aria-label="Toggle menu"
           >
             <span
@@ -104,25 +90,16 @@ export default function Header() {
         }`}
       >
         <nav className="px-4 pb-4 pt-2 flex flex-col gap-1">
-          {navLinks.map((link) => {
-            const active =
-              link.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(link.href.replace("/#", ""));
-            return (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className={`px-3 py-3 text-sm font-semibold tracking-widest rounded-md transition-colors duration-200
-                  text-[#0f2232] hover:bg-[#0f2232]/10
-                  ${active ? "border-l-4 border-[#1a6b9a] pl-4 bg-[#1a6b9a]/5" : ""}
-                `}
-              >
-                {link.label}
-              </Link>
-            );
-          })}
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+              className="px-3 py-3 text-sm font-semibold tracking-widest rounded-md transition-colors duration-200 text-[#0f2232] hover:bg-[#0f2232]/10"
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
       </div>
     </header>

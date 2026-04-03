@@ -1,12 +1,3 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import PageHero from "@/components/PageHero";
-
-export const metadata: Metadata = {
-  title: "Advanced Diving",
-  description: "Continue your scuba diving education with advanced courses in Fort Lauderdale.",
-};
-
 const specialties = [
   {
     title: "Enriched Air Nitrox",
@@ -28,22 +19,28 @@ const specialties = [
   },
 ];
 
-export default function AdvancedPage() {
+export default function AdvancedSection() {
   return (
-    <>
-      <PageHero
-        eyebrow="Take It Further"
-        title="Advanced Diving"
-        image="/images/advanced.jpeg"
-        position="center 35%"
-      />
+    <section id="advanced" className="scroll-mt-20">
+      {/* Banner */}
+      <div className="relative h-56 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/advanced.jpeg')", backgroundPosition: "center 35%" }}
+        />
+        <div className="absolute inset-0 bg-[#0f2232]/65" />
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+          <p className="text-xs font-bold tracking-[0.3em] text-[#2a8fc9] uppercase mb-3">Take It Further</p>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-white">Advanced Diving</h2>
+        </div>
+      </div>
 
       {/* Why continue */}
-      <section className="py-12 px-4 bg-white">
+      <div className="py-12 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f2232] text-center mb-3">
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-[#0f2232] text-center mb-3">
             Why continue training beyond Open Water?
-          </h2>
+          </h3>
           <p className="text-center text-[#4a5568] mb-10 max-w-2xl mx-auto">
             Open Water certification is like first learning to drive a car — you know the basics,
             but there&apos;s still a lot to learn before you&apos;re truly comfortable in any situation.
@@ -56,7 +53,7 @@ export default function AdvancedPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-[#0f2232] text-lg mb-3">Advanced Open Water</h3>
+              <h4 className="font-bold text-[#0f2232] text-lg mb-3">Advanced Open Water</h4>
               <p className="text-[#4a5568] text-sm leading-relaxed mb-3">
                 With diving, experience and coaching by a professional makes you a better, safer,
                 and more comfortable diver. The natural progression is the Advanced Open Water course.
@@ -79,24 +76,23 @@ export default function AdvancedPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-[#0f2232] text-lg mb-3">Why it matters</h3>
+              <h4 className="font-bold text-[#0f2232] text-lg mb-3">Why it matters</h4>
               <p className="text-[#4a5568] text-sm leading-relaxed">
-                Every dive after your Open Water cert builds confidence and skill. Formal
-                training accelerates that. You&apos;ll learn techniques that take recreational
-                divers years to figure out on their own, and you&apos;ll dive with far greater
-                self-assurance from the start.
+                Every dive after your Open Water cert builds confidence and skill. Formal training
+                accelerates that. You&apos;ll learn techniques that take recreational divers years to
+                figure out on their own, and you&apos;ll dive with far greater self-assurance from the start.
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Specialty courses */}
-      <section className="py-12 px-4 bg-[#f7f9fc]">
+      <div className="py-12 px-4 bg-[#f7f9fc]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-extrabold text-[#0f2232] text-center mb-8">
+          <h3 className="text-3xl font-extrabold text-[#0f2232] text-center mb-8">
             Specialty Courses
-          </h2>
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {specialties.map((s) => (
               <div
@@ -111,37 +107,14 @@ export default function AdvancedPage() {
                   />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <h3 className="text-lg font-bold text-[#0f2232] mb-3">{s.title}</h3>
+                  <h4 className="text-lg font-bold text-[#0f2232] mb-3">{s.title}</h4>
                   <p className="text-[#4a5568] text-sm leading-relaxed">{s.desc}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="relative py-12 px-4 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/rescue.avif')" }}
-        />
-        <div className="absolute inset-0 bg-[#0f2232]/80" />
-        <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-white mb-6">
-            Ready to advance your diving skills?
-          </h3>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white/15 hover:bg-white/25 text-white font-semibold rounded-full border border-white/30 transition-all duration-300 backdrop-blur-sm"
-          >
-            Get in Touch
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

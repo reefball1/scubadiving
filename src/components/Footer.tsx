@@ -1,13 +1,11 @@
-import Link from "next/link";
-
 const navLinks = [
-  { href: "/", label: "HOME" },
-  { href: "/why", label: "WHY DIVE?" },
-  { href: "/steps", label: "LEARNING STEPS" },
-  { href: "/pricing", label: "PRICING & EQUIPMENT" },
-  { href: "/advanced", label: "ADVANCED" },
-  { href: "/testimonials", label: "TESTIMONIALS" },
-  { href: "/contact", label: "CONTACT" },
+  { href: "#home", label: "HOME" },
+  { href: "#why", label: "WHY DIVE?" },
+  { href: "#steps", label: "LEARNING STEPS" },
+  { href: "#advanced", label: "ADVANCED" },
+  { href: "#pricing", label: "PRICING & EQUIPMENT" },
+  { href: "#testimonials", label: "TESTIMONIALS" },
+  { href: "#contact", label: "CONTACT" },
 ];
 
 export default function Footer() {
@@ -17,24 +15,24 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
         <div className="flex flex-col items-center gap-6">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <a href="#home" className="flex items-center">
             <img
               src="/images/new-logo.png"
               alt="FTL Scuba Diving"
               className="h-14 w-auto brightness-0 invert"
             />
-          </Link>
+          </a>
 
           {/* Nav */}
           <nav className="flex flex-wrap justify-center gap-x-5 gap-y-2">
             {navLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 className="text-xs font-semibold tracking-widest text-white/70 hover:text-white transition-colors duration-200"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </nav>
 

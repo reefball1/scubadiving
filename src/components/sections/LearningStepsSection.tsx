@@ -1,12 +1,3 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import PageHero from "@/components/PageHero";
-
-export const metadata: Metadata = {
-  title: "Learning Steps",
-  description: "Steps to become a certified scuba diver in Fort Lauderdale.",
-};
-
 const steps = [
   {
     num: "01",
@@ -34,22 +25,27 @@ const steps = [
   },
 ];
 
-export default function StepsPage() {
+export default function LearningStepsSection() {
   return (
-    <>
-      <PageHero
-        eyebrow="Your Path to Certification"
-        title="Learning Steps"
-        image="/images/learning-steps.avif"
-        position="center 70%"
-      />
+    <section id="steps" className="scroll-mt-20">
+      {/* Banner */}
+      <div className="relative h-56 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/learning-steps.avif')", backgroundPosition: "center 70%" }}
+        />
+        <div className="absolute inset-0 bg-[#0f2232]/65" />
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+          <p className="text-xs font-bold tracking-[0.3em] text-[#2a8fc9] uppercase mb-3">Your Path to Certification</p>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-white">Learning Steps</h2>
+        </div>
+      </div>
 
-      {/* Steps */}
-      <section className="py-12 px-4 bg-white">
+      <div className="py-12 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f2232] text-center mb-4">
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-[#0f2232] text-center mb-4">
             What is the Process to Learn to Dive?
-          </h2>
+          </h3>
           <p className="text-center text-[#4a5568] mb-8 max-w-2xl mx-auto">
             Getting your Open Water certification is straightforward and fun. Here&apos;s how it works:
           </p>
@@ -61,17 +57,13 @@ export default function StepsPage() {
                 className="bg-[#f7f9fc] rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col"
               >
                 <div className="h-52 overflow-hidden">
-                  <img
-                    src={step.img}
-                    alt={step.alt}
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={step.img} alt={step.alt} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-7 flex flex-col flex-1">
                   <span className="text-7xl font-extrabold text-[#1a6b9a]/10 leading-none block -mt-2 mb-1 select-none">
                     {step.num}
                   </span>
-                  <h3 className="text-xl font-extrabold text-[#0f2232] mb-3">{step.title}</h3>
+                  <h4 className="text-xl font-extrabold text-[#0f2232] mb-3">{step.title}</h4>
                   <p className="text-[#4a5568] text-sm leading-relaxed mb-4">{step.desc}</p>
                   <div className="mt-auto inline-flex items-center gap-1.5 text-xs font-semibold text-[#1a6b9a] bg-[#1a6b9a]/10 px-3 py-1.5 rounded-full self-start">
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
@@ -88,30 +80,7 @@ export default function StepsPage() {
             Note: time estimates are averages — it depends on how quickly you master the specific skills and performance requirements.<br />We will always work at your pace.
           </p>
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="relative py-12 px-4 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/go-diving.png')" }}
-        />
-        <div className="absolute inset-0 bg-[#0f2232]/80" />
-        <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-white mb-6">
-            Ready to start your certification journey?
-          </h3>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white/15 hover:bg-white/25 text-white font-semibold rounded-full border border-white/30 transition-all duration-300 backdrop-blur-sm"
-          >
-            Contact Us Today
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
-        </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

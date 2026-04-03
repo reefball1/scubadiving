@@ -1,13 +1,3 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import PageHero from "@/components/PageHero";
-
-export const metadata: Metadata = {
-  title: "Why Dive?",
-  description:
-    "Discover the transformative experience of scuba diving in Fort Lauderdale.",
-};
-
 const reasons = [
   {
     num: "1",
@@ -36,58 +26,66 @@ const reasons = [
   },
 ];
 
-export default function WhyPage() {
+const videoUrls = [
+  "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1",
+  "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1&index=2",
+  "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1&index=3",
+  "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1&index=4",
+];
+
+export default function WhyDiveSection() {
   return (
-    <>
-      <PageHero
-        eyebrow="Discover the Ocean"
-        title="Why Dive?"
-        image="/images/turtle.avif"
-        position="center 65%"
-      />
+    <section id="why" className="scroll-mt-20">
+      {/* Banner */}
+      <div className="relative h-56 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/turtle.avif')", backgroundPosition: "center 65%" }}
+        />
+        <div className="absolute inset-0 bg-[#0f2232]/65" />
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
+          <p className="text-xs font-bold tracking-[0.3em] text-[#2a8fc9] uppercase mb-3">Discover the Ocean</p>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-white">Why Dive?</h2>
+        </div>
+      </div>
 
       {/* Intro */}
-      <section className="py-12 px-4 bg-white">
+      <div className="py-12 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f2232] mb-10">
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-[#0f2232] mb-10">
             Why learn to dive?
-          </h2>
+          </h3>
           <div className="space-y-6 text-[#4a5568] text-lg leading-relaxed">
             <p>
-              Imagine floating weightlessly like an astronaut, watching colorful
-              fish, or exploring shipwrecks. Scuba diving immerses you in a
-              world that many people never get to see firsthand. With your Open
-              Water Scuba Diver certification, you gain access to this world in
-              a safe and educated manner.
+              Imagine floating weightlessly like an astronaut, watching colorful fish, or exploring
+              shipwrecks. Scuba diving immerses you in a world that many people never get to see
+              firsthand. With your Open Water Scuba Diver certification, you gain access to this
+              world in a safe and educated manner.
             </p>
             <p>
-              Scuba diving is not just another sport; it&apos;s a transformative
-              experience that allows you to witness life under the waves. It is
-              an activity that can be enjoyed at almost any age and can be
-              combined with travel to some of the most beautiful destinations in
+              Scuba diving is not just another sport; it&apos;s a transformative experience that allows
+              you to witness life under the waves. It is an activity that can be enjoyed at almost
+              any age and can be combined with travel to some of the most beautiful destinations in
               the world.
             </p>
             <p>
-              Underwater is one of the few places in the world where you can
-              truly &apos;check out&apos;. No emails, text messages, or social
-              media while diving!
+              Underwater is one of the few places in the world where you can truly &apos;check out&apos;.
+              No emails, text messages, or social media while diving!
             </p>
             <p className="italic text-[#1a2533] border-l-4 border-[#1a6b9a] pl-4">
-              It&apos;s also an excellent gift for the family member who has
-              always wanted to dive!
+              It&apos;s also an excellent gift for the family member who has always wanted to dive!
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Top 5 reasons */}
-      <section className="py-12 px-4 bg-[#f7f9fc]">
+      <div className="py-12 px-4 bg-[#f7f9fc]">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0f2232] text-center mb-4">
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-[#0f2232] text-center mb-4">
             Top 5 Reasons You Should Become a Scuba Diver
-          </h2>
-          {/* Full-width photo banner */}
-          <div className="mt-6 mb-10 sm:col-span-2 grid grid-cols-2 gap-4">
+          </h3>
+          <div className="mt-6 mb-10 grid grid-cols-2 gap-4">
             <img
               src="/images/photo-4.png"
               alt="Underwater selfie"
@@ -99,7 +97,6 @@ export default function WhyPage() {
               className="rounded-2xl shadow-lg w-full h-56 object-cover"
             />
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {reasons.map((r) => (
               <div
@@ -110,25 +107,22 @@ export default function WhyPage() {
                   {r.num}
                 </span>
                 <div>
-                  <h3 className="font-bold text-[#0f2232] mb-2">{r.title}</h3>
-                  <p className="text-[#4a5568] text-sm leading-relaxed">
-                    {r.body}
-                  </p>
+                  <h4 className="font-bold text-[#0f2232] mb-2">{r.title}</h4>
+                  <p className="text-[#4a5568] text-sm leading-relaxed">{r.body}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Videos */}
-      <section className="py-12 px-4 bg-white">
+      <div className="py-12 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-extrabold text-[#0f2232] mb-4">
-              Here are my most recent diving videos—join us and create amazing
-              memories!
-            </h2>
+            <h3 className="text-3xl font-extrabold text-[#0f2232] mb-4">
+              Here are my most recent diving videos—join us and create amazing memories!
+            </h3>
             <a
               href="https://www.youtube.com/@reefball1"
               target="_blank"
@@ -142,16 +136,8 @@ export default function WhyPage() {
             </a>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {[
-              "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1",
-              "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1&index=2",
-              "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1&index=3",
-              "https://www.youtube-nocookie.com/embed?listType=user_uploads&list=reefball1&index=4",
-            ].map((src, i) => (
-              <div
-                key={i}
-                className="relative aspect-video rounded-2xl overflow-hidden shadow-lg"
-              >
+            {videoUrls.map((src, i) => (
+              <div key={i} className="relative aspect-video rounded-2xl overflow-hidden shadow-lg">
                 <iframe
                   src={src}
                   allowFullScreen
@@ -162,43 +148,7 @@ export default function WhyPage() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="relative py-12 px-4 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/photo-5.png')" }}
-        />
-        <div className="absolute inset-0 bg-[#0f2232]/80" />
-        <div className="relative z-10 max-w-3xl mx-auto text-center">
-          <h3 className="text-xl sm:text-2xl font-semibold text-white leading-relaxed mb-8">
-            Do you want to explore the world and the animals in it? Are you
-            looking for a new activity to do with friends, an excuse to
-            experience the great outdoors, or just some peace and quiet? If so,
-            it&apos;s time to learn to dive today.
-          </h3>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-white/15 hover:bg-white/25 text-white font-semibold rounded-full border border-white/30 transition-all duration-300 backdrop-blur-sm"
-          >
-            Get Started Today
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2.5}
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </Link>
-        </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
